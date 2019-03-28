@@ -23,6 +23,7 @@ def first_challenge
         value.each do |flavor|
           binding.pry
           if flavor == "strawberry"
+            flavor[0]
           end
         end
       end
