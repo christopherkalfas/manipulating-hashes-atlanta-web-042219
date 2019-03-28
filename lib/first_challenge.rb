@@ -15,12 +15,12 @@ def first_challenge
   }
 
   #your code here
-  contacts.collect do |name, data|
+  contacts.each do |name, data|
     binding.pry
-    data.collect do |attribute, value| 
+    data.each do |attribute, value| 
       binding.pry 
-      if value == :favorite_icecream_flavors
-        value.collect do |flavor|
+      if attribute == :favorite_icecream_flavors
+        value.each do |flavor|
           binding.pry
           if flavor.delete_if == "strawberry"
           end
