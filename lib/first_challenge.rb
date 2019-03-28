@@ -19,16 +19,8 @@ def first_challenge
     binding.pry
     data.each do |attribute, value| 
       binding.pry 
-      if attribute == :favorite_icecream_flavors
-        value.each do |flavor|
-          binding.pry
-          if flavor == "strawberry"
-            flavor[0]
-          end
-        end
-      end
-    end
-  end 
+    value
+    
             
 
   #remember to return your newly altered contacts hash!
