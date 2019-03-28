@@ -17,7 +17,7 @@ def first_challenge
   #your code here
   contacts.collect do |name, data|
     binding.pry
-    data.collect do |attribute, value 
+    data.collect do |attribute, value| 
       binding.pry 
       if value == :favorite_icecream_flavors
         value.collect do |flavor|
