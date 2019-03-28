@@ -1,3 +1,4 @@
+require 'pry'
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -15,9 +16,12 @@ def first_challenge
 
   #your code here
   contacts.collect do |name, data|
+    binding.pry
     data.collect do |attribute, value 
+      binding.pry 
       if value == :favorite_icecream_flavors
         value.collect do |flavor|
+          binding.pry
           if flavor.delete_if == "strawberry"
           end
         end
